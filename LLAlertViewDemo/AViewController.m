@@ -52,7 +52,7 @@
 }
 
 - (IBAction)alert2CtrlAction:(UIButton *)sender {
-    LLAlertMessage *messageBody = [LLAlertMessage newWithStyle:UIAlertControllerStyleAlert title:@"⚠️" message:@"错误！" buttonTitles:@[@"重试",@"跳转"] buttonStyles:@[@(UIAlertActionStyleDefault),@(UIAlertActionStyleDestructive)]];
+    LLAlertMessage *messageBody = [LLAlertMessage newWithStyle:UIAlertControllerStyleAlert title:@"提示" message:@"文件错误！" buttonTitles:@[@"重试",@"跳转"] buttonStyles:@[@(UIAlertActionStyleDefault),@(UIAlertActionStyleDestructive)]];
     [LLAlertView showSystemAlertViewMessageBody:messageBody clickBlock:^(NSInteger index) {
         NSLog(@"选择了%ld",index);
     }];

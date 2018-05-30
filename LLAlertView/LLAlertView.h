@@ -32,7 +32,7 @@ typedef void(^LLAlertViewBlock)(NSInteger index);
  */
 -(UIAlertView*)showSystemAlertViewMessage:(NSString*)message buttonTitles:(NSArray *)bts clickBlock:(LLAlertViewBlock)block;
 /**
- UIAlertView，弹窗信息体，可选
+ UIAlertView + UIActionSheet，弹窗信息体，可选
  */
 -(id)showSystemAlertViewMessageBody:(LLAlertMessage*)body clickBlock:(LLAlertViewBlock)block;
 
